@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    gap: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.get-started {
+    background-color: #0084ff; /* Medium's blue color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space between text and image */
+    padding: 80px 0;
+}
+
+.hero-image {
+    /* Placeholder - Add your image/illustration here */
+    width: 50%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.start-reading {
+    background-color: #0084ff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Media Query for Tablet-Sized Screens */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack hero content vertically */
+    }
+
+    .hero-image {
+        width: 100%; /* Full-width image on tablets */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 10px;
+    }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 32px; /* Reduce heading size on smaller screens */
+    }
+}
